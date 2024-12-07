@@ -21,14 +21,8 @@ export const UserCard: React.FC<PropsUsers> = ({ users }) => {
               <CardTitle className="text-3xl font-bold">{user.name}</CardTitle>
             </CardHeader>
             <CardContent className="text-xl flex flex-col justify-center items-center">
-              <div className="flex">
-                <h2 className="mr-2 font-bold">Company name:</h2>
-                <p>{user.company.name}</p>
-              </div>
-              <div className="flex">
-                <h2 className="mr-2 font-bold">Email:</h2>
-                <p>{user.email}</p>
-              </div>
+                <p><b>Company:</b> {user.company.name}</p>
+                <p><b>Email:</b> {user.email}</p>
             </CardContent>
             <CardFooter>
               <Button 
