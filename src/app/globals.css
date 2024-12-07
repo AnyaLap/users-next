@@ -70,3 +70,19 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes pulse-animation {
+  0% {
+    background-color: rgba(23, 80, 179, 0.5);
+  }
+  50% {
+    background-color: rgba(216, 47, 47, 0.8);
+  }
+  100% {
+    background-color: rgba(156, 163, 175, 0.5);
+  }
+}
+
+.animate-pulse {
+  animation: pulse-animation 2s infinite;
+}
