@@ -3,7 +3,7 @@ import { User } from "@/types/user";
 import { fetchData } from '@/utils/error';
 import { notFound } from "next/navigation"; 
 
-export const HomePage = async () => {
+const HomePage: React.FC = async () => {
   const { data: users, error } = await fetchData<User[]>('https://jsonplaceholder.typicode.com/users');
 
   if (error || !users || users.length === 0) {

@@ -3,7 +3,7 @@ import { UserInfo } from "@/components/UserInfo/UserInfo";
 import { notFound } from "next/navigation"; 
 import { fetchData } from '@/utils/error';
 
-export const UserPage = async ({ params }: { params: { id: string } }) => {
+const UserPage = async ({ params }: { params: { id: string } }) => {
 
   const UserId = params.id;
 
